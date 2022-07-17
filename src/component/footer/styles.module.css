@@ -1,0 +1,22 @@
+/* footer */
+.footer {
+  height: 128px;
+  background: #414141;
+  display: flex;
+  justify-content: center;
+}
+.listButton {
+  min-width: 80%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.footer_button {
+  color: white;
+  margin-right:46px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.033px;
+}
