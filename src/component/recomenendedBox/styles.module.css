@@ -1,0 +1,38 @@
+.recomemendedBox {
+  width: 25%;
+  padding: 16px;
+}
+.recomemended {
+  background: #2e2e2e;
+  padding: 24px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recomemendedTitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  /* or 123% */
+
+  text-align: center;
+  letter-spacing: 0.11px;
+
+  color: #ffcc21;
+  margin-bottom: 10px;
+}
+.recomemendedLine {
+  width: 56px;
+  border-top: 1px solid #ffffff;
+}
+.recomemendedContent {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  text-align: center;
+
+  color: #ffffff;
+}

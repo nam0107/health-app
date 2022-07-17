@@ -1,0 +1,48 @@
+.itemBox {
+  width: 25%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.itemName {
+  position: absolute;
+  padding: 8px;
+  bottom: 0;
+  width: fit-content;
+  background: #ffcc21;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  min-width: 120px;
+}
+.itemImage {
+  width: 100%;
+}
+.itemContent {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+
+  letter-spacing: 0.075px;
+  margin: 8px 0 3px;
+  color: #414141;
+}
+.itemHashtag {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  /* or 183% */
+
+  letter-spacing: 0.06px;
+
+  color: #ff963c;
+}
