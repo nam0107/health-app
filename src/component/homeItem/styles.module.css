@@ -1,0 +1,25 @@
+.itemBox {
+  width: 25%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.itemName {
+  position: absolute;
+  padding: 8px;
+  bottom: 0;
+  width: fit-content;
+  background: #ffcc21;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  min-width: 120px;
+}
