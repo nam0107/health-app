@@ -1,0 +1,31 @@
+.diaryBox {
+  width: 25%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.diary {
+  border: 1px solid gray;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.diaryTime {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  letter-spacing: 0.09px;
+
+  color: #414141;
+}
+.diaryContent {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 142% */
+
+  letter-spacing: 0.06px;
+
+  color: #414141;
+}

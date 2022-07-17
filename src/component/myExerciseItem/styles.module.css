@@ -1,0 +1,63 @@
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #777777;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.contentRight {
+  padding-right: 20px;
+  width: fit-content;
+}
+.contentBoxWrapper {
+  width: 50%;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.contentLeftName {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+
+  letter-spacing: 0.075px;
+
+  color: #ffffff;
+}
+.contentLeft_number {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.075px;
+
+  color: #ffcc21;
+}
+.contentRight {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  text-align: right;
+  letter-spacing: 0.09px;
+
+  color: #ffcc21;
+}
+.listContentBox::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 6px;
+  background: #777777;
+}
+.contentLeft_number {
+  margin-left: 20px;
+}
+.listContentBox::-webkit-scrollbar-thumb {
+  background: #ffcc21;
+  border-radius: 20px;
+}
+.contentLeft {
+  flex: 1;
+}

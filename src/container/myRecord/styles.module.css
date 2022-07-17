@@ -1,0 +1,225 @@
+.MyRecordBox {
+  padding-top: 64px;
+}
+
+
+.listRecordBox {
+  margin: 0 -24px;
+  display: flex;
+}
+.listRecordBoxWrapper {
+  width: 80%;
+  margin: 32px auto;
+}
+.recordImage {
+  width: 100%;
+  filter: grayscale(200%);
+  background: rgba(0, 0, 0, 0.822);
+}
+.recordButtonBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recordButtonContent {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.125px;
+  color: #ffcc21;
+  margin-bottom: 10px;
+}
+.recordButton {
+  background: #ff963c;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 24px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.graphBoxWrapper {
+  width: 80%;
+  margin: 0px auto 56px;
+  background: #414141;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+.grapHeader {
+  display: flex;
+  align-items: center;
+}
+.grapHeaderName {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  width: 88px;
+
+  letter-spacing: 0.15px;
+
+  color: #ffffff;
+}
+.grapHeaderDate {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height, or 123% */
+
+  letter-spacing: 0.11px;
+
+  color: #ffffff;
+}
+.graph_background {
+  width: 100%;
+}
+.graphBody {
+  position: relative;
+}
+.graphBodyWrapper {
+  padding: 0 31px;
+  margin: 10px 0;
+}
+.graph_image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.graph_number {
+  position: absolute;
+  bottom: -15%;
+  left: -1.2%;
+  width: 102%;
+}
+.listGraphButton {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.graphButtonBox {
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 100px;
+  margin-right: 16px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+
+  text-align: center;
+  letter-spacing: 0.075px;
+
+  color: #ffcc21;
+  cursor: pointer;
+}
+.graphButton {
+  margin: 0 20px;
+}
+.graphButtonBox.choose {
+  color: white;
+  background: #ffcc21;
+}
+.graphBodyFooter {
+  margin-top: 50px;
+}
+
+.listContentBox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 192px;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.listContentBox::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 6px;
+  background: #777777;
+}
+
+.listContentBox::-webkit-scrollbar-thumb {
+  background: #ffcc21;
+  border-radius: 20px;
+}
+
+/* diary */
+.myDiary {
+  margin: 0 auto;
+  width: 80%;
+}
+.diaryListBox {
+  margin: 6px -6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.diaryBox {
+  width: 25%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.diary {
+  border: 1px solid gray;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.diaryTime {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  letter-spacing: 0.09px;
+
+  color: #414141;
+}
+.diaryContent {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 142% */
+
+  letter-spacing: 0.06px;
+
+  color: #414141;
+}
+.myDiaryHeadding {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  /* or 123% */
+
+  letter-spacing: 0.11px;
+
+  color: #414141;
+}
+.body_buttonBox {
+  width: 100%;
+}
+.body_button {
+  margin: 24px auto 64px;
+  background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+  height: 56px;
+  width: 296px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
