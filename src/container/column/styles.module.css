@@ -21,7 +21,7 @@
 }
 .foodBannerImageBox {
   width: 42.1875%;
-  background: url(../../image/bannerFood.png);
+  background: url(../../../public/images/bannerFood.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

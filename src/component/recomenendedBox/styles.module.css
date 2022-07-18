@@ -1,6 +1,7 @@
 .recomemendedBox {
   width: 25%;
   padding: 16px;
+  overflow: hidden;
 }
 .recomemended {
   background: #2e2e2e;
@@ -8,6 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  box-sizing: border-box;
 }
 .recomemendedTitle {
   font-weight: 400;

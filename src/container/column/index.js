@@ -1,13 +1,5 @@
 import React from 'react';
 import styles from './styles.module.css';
-import cl1 from '../../image/cl1.png';
-import cl2 from '../../image/cl2.png';
-import cl3 from '../../image/cl3.png';
-import cl4 from '../../image/cl4.png';
-import cl5 from '../../image/cl5.png';
-import cl6 from '../../image/cl6.png';
-import cl7 from '../../image/cl7.png';
-import cl8 from '../../image/cl8.png';
 
 import RecomenendedBox from '../../component/recomenendedBox';
 import RecomendItem from '../../component/recomendItem';
@@ -26,7 +18,7 @@ function Column() {
       <div className={styles.body}>
         <div className={styles.listItemBox}>
           <RecomendItem
-            imgSrc={cl1}
+            imgSrc={'/images/cl1.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -34,7 +26,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl2}
+            imgSrc={'/images/cl2.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -42,7 +34,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl3}
+            imgSrc={'/images/cl3.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -50,7 +42,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl4}
+            imgSrc={'/images/cl4.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -58,7 +50,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl5}
+            imgSrc={'/images/cl5.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -66,7 +58,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl6}
+            imgSrc={'/images/cl6.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -74,7 +66,7 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl7}
+            imgSrc={'/images/cl7.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
@@ -82,14 +74,14 @@ function Column() {
             tag={"#魚料理 #和食 #DHAƒ"}
           />
           <RecomendItem
-            imgSrc={cl8}
+            imgSrc={'/images/cl8.png'}
             time={'2021.05.17 23:25'}
             content={
               '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…'
             }
             tag={"#魚料理 #和食 #DHAƒ"}
           />
-          
+
         </div>
         <div className={styles.body_buttonBox}>
           <div className={styles.body_button}>記録をもっと見る</div>
