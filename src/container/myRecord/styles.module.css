@@ -86,10 +86,7 @@
 .graphBody {
   position: relative;
 }
-.graphBodyWrapper {
-  padding: 0 31px;
-  margin: 10px 0;
-}
+
 .graph_image {
   position: absolute;
   width: 100%;

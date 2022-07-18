@@ -11,6 +11,7 @@
 .recordBoxB {
   width: 33.333333333333%;
   padding: 24px;
+  cursor: pointer;
 }
 .recordImage {
   width: 100%;

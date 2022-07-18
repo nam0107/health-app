@@ -9,10 +9,10 @@ function Column() {
     <div className={styles.column}>
       <div className={styles.listRecommendedBoxWrapper}>
         <div className={styles.listRecommendedBox}>
-          <RecomenendedBox label={'RECOMMENDED COLUMN'} content={'オススメ'} />
-          <RecomenendedBox label={'RECOMMENDED DIET'} content={'ダイエット'} />
-          <RecomenendedBox label={'RECOMMENDED BEAUTY'} content={'美容'} />
-          <RecomenendedBox label={'RECOMMENDED HEALTH'} content={'健康'} />
+          <RecomenendedBox label1={'RECOMMENDED'} label2={'COLUMN'} content={'オススメ'} />
+          <RecomenendedBox label1={'RECOMMENDED'} label2={"DIET"} content={'ダイエット'} />
+          <RecomenendedBox label1={'RECOMMENDED'} label2={"BEAUTY"} content={'美容'} />
+          <RecomenendedBox label1={'RECOMMENDED'} label2={"HEALTH"} content={'健康'} />
         </div>
       </div>
       <div className={styles.body}>

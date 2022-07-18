@@ -1,57 +1,101 @@
 import React from 'react';
 import styles from './styles.module.css';
-import main_photo_text from '../../image/main_photo_text.png';
-import main_graph from '../../image/main_graph.png';
-import hex_morning from '../../image/hex_morning.png';
-import hex_lunch from '../../image/hex_lunch.png';
-import hex_dinner from '../../image/hex_dinner.png';
-import hex_snack from '../../image/hex_snack.png';
-import m01 from '../../image/m01.png';
-import m02 from '../../image/m02.png';
-import m03 from '../../image/m03.png';
-import m04 from '../../image/m04.png';
-import m06 from '../../image/m06.png';
-import m07 from '../../image/m07.png';
-import m08 from '../../image/m08.png';
 
 import HomeItem from '../../component/homeItem';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
+import { useGetMeal, useGetAchievementRate } from '../../queries/home';
+import ProgressProvider from '../../component/progressProvider';
+import BodyChart from '../../component/bodyChart';
+import { DateTime } from "luxon";
 
 function Home() {
+  const { data: listMeal, isFetched: isFetchedMeal } = useGetMeal();
+  const { data: achievementRate, isFetched: isFetchedAchievementRate } =
+    useGetAchievementRate();
   return (
     <>
       <div className={styles.banner}>
         <div className={styles.foodBannerImageBox}>
-          <img alt='' className={styles.mainPhotoText} src={main_photo_text} />
+          <div style={{ width: '35%' }}>
+            {isFetchedAchievementRate && (
+              <ProgressProvider
+                valueStart={0}
+                valueEnd={achievementRate[0]?.percentage}
+              >
+                {(value) => (
+                  <CircularProgressbarWithChildren
+                    value={value}
+                    styles={{
+                      root: {},
+                      path: {
+                        stroke: `white`,
+                        strokeLinecap: 'butt',
+                        transition: 'stroke-dashoffset 0.5s ease 0s',
+                        transformOrigin: 'center center',
+                        strokeWidth: '2px',
+                      },
+                      trail: {
+                        stroke: 'none',
+                        strokeLinecap: 'butt',
+                        transformOrigin: 'center center',
+                      },
+                      text: {
+                        fill: 'white',
+                        fontSize: '16px',
+                      },
+                      background: {
+                        fill: '#3e98c7',
+                      },
+                    }}
+                  >
+                    <div className={styles.circleNumber}>
+                      {DateTime.fromSeconds(achievementRate[0]?.time||'').toFormat('dd/MM')} <span style={{ fontSize: '30px' }}>{value}%</span>
+                    </div>
+                  </CircularProgressbarWithChildren>
+                )}
+              </ProgressProvider>
+            )}
+          </div>
         </div>
+
         <div className={styles.graphBannerBox}>
-          <img alt='' className={styles.graphBanner} src={main_graph} />
+          <BodyChart />
         </div>
       </div>
       <div className={styles.body}>
         <div className={styles.list_hexBox}>
           <div className={styles.hexBox}>
-            <img alt='' className={styles.hex} src={hex_morning} />
+            <img
+              alt=''
+              className={styles.hex}
+              src={'/images/hex_morning.png'}
+            />
           </div>
           <div className={styles.hexBox}>
-            <img alt='' className={styles.hex} src={hex_lunch} />
+            <img alt='' className={styles.hex} src={'/images/hex_lunch.png'} />
           </div>
           <div className={styles.hexBox}>
-            <img alt='' className={styles.hex} src={hex_dinner} />
+            <img alt='' className={styles.hex} src={'/images/hex_dinner.png'} />
           </div>
           <div className={styles.hexBox}>
-            <img alt='' className={styles.hex} src={hex_snack} />
+            <img alt='' className={styles.hex} src={'/images/hex_snack.png'} />
           </div>
         </div>
-        <div className={styles.listItemBox}>
-          <HomeItem imgSrc={m01} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m02} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m03} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m04} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m01} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m06} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m07} content={'05.21.Morning'} />
-          <HomeItem imgSrc={m08} content={'05.21.Morning'} />
-        </div>
+        {isFetchedMeal && (
+          <div className={styles.listItemBox}>
+            {listMeal.map((meal) => {
+              return (
+                <HomeItem
+                  key={meal.id}
+                  imgSrc={meal.imgSrc}
+                  content={meal.content}
+                />
+              );
+            })}
+          </div>
+        )}
         <div className={styles.body_buttonBox}>
           <div className={styles.body_button}>記録をもっと見る</div>
         </div>
